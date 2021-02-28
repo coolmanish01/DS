@@ -9,7 +9,7 @@ int main(){
         cout<<"Enter the "<<i+1<<" Element of Array : ";
         cin>>ar[i];
     }
-    for(i=0;i<n;i++){
+    for(i=0;i<n-1;i++){
         for(j=0;j<n-i-1;j++){
             if(ar[j]>ar[j+1]){
                 t=ar[j];
