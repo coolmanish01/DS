@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 void main(){
-    int A[10][10],B[10][10],i,j,m,n,t;
+    int A[10][10],i,j,m,n,t;
     printf("\n\tEnter no of rows : ");
     scanf("%d",&m);
     printf("\n\tEnter no of Columns : ");
