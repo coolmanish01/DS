@@ -37,9 +37,9 @@ int main(){
     cout<<"Enter the size of Queue : ";
     cin>>::size;
 		do{
-		cout<<"\n\nPress 1 for Push Operation"
-		      "\nPress 2 for Pop Operation"
-		      "\nPress 3 to Display Stack"
+		cout<<"\n\nPress 1 to Insert"
+		      "\nPress 2 to Delete"
+		      "\nPress 3 to Display"
 		      "\nPress 4 to Exit"
 		      "\nEnter Your Choice : ";
 		int ch;
