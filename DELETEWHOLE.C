@@ -12,17 +12,13 @@ void traversal(struct Node *ptr){
     }
 }
 
-struct Node *deleteList(struct Node *head)
-{
+struct Node *deleteList(struct Node *head){
     struct Node *temp;
-    while(head != NULL)
-    {
+    while(head != NULL){
         temp = head;
         head = head->next;
-
         free(temp);
     }
-
     printf("SUCCESSFULLY DELETED ALL NODES OF LINKED LIST\n");
     return head;
 }
@@ -51,7 +47,6 @@ int main(){
 
     printf("Linked list before deletion\n");
     traversal(head);
-
     head = deleteList(head);
 
     return 0;
