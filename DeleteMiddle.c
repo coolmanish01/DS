@@ -15,12 +15,19 @@ void traversal(struct Node *ptr){
 struct Node * deleteMiddle(struct Node * head, int index){
     struct Node *p = head;
     struct Node *q = head->next;
+    if(index==0){
+        struct Node * ptr = head;
+        head = head->next;
+        free(ptr);
+        return head;
+    }
     for (int i = 0; i < index-1; i++){
         p = p->next;
         q = q->next;
     }
 
     p->next = q->next;
+    q->next= p->next;
     free(q);
     return head;
 }
